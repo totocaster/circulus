@@ -1,0 +1,63 @@
+title: Sample Post
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus tristique vehicula auctor. Maecenas neque est, interdum sed consequat ac, fermentum in felis. Praesent et nunc risus. Quisque ac mauris in tortor vestibulum porta sed vitae diam. Praesent dictum, tortor sed malesuada fermentum, massa nunc suscipit est, dictum dapibus felis nulla sed dui. In hac habitasse platea dictumst. Pellentesque commodo ipsum massa. Quisque aliquam enim id libero convallis sed lobortis ante condimentum. Etiam rutrum laoreet dolor, sed dapibus ligula molestie a. Nullam ut felis est.
+
+> Phasellus tristique vehicula auctor. Maecenas neque est, interdum sed consequat ac, fermentum in felis. Praesent et nunc risus. Quisque ac mauris in tortor vestibulum porta sed vitae diam.
+
+## Sub-Heading
+
+Proin blandit, mi sed consequat mattis, est dolor commodo ante, a pellentesque eros diam vitae lacus. Cras aliquet, ipsum nec bibendum aliquet, orci nunc ultricies odio, id tincidunt urna turpis nec sem. Aliquam cursus arcu id mi pharetra consectetur. Nulla nisi eros, pellentesque vitae pulvinar ut, dictum ut enim. In eros lacus, iaculis ut dictum id, elementum quis metus. Vestibulum auctor purus vitae purus iaculis mollis. Quisque laoreet volutpat velit ut ultricies. Aenean non arcu sed lorem lacinia egestas. Duis arcu nibh, placerat a euismod in, ornare eu lectus. Morbi a fermentum magna. Integer tincidunt ultricies neque, aliquet malesuada erat condimentum vel. Morbi fringilla vestibulum malesuada. Mauris vitae est risus, vitae mattis turpis. Duis neque mauris, tristique quis pretium quis, varius at odio. Proin sed viverra ligula. Donec fermentum tortor id sem adipiscing mollis.
+
+![Image alt attribute text is displayed automatically beneath the image as footnote, Place in image is Katskhi in Georgia](http://farm8.staticflickr.com/7272/8166524810_19d7e1aa12_h.jpg)
+
+Morbi a fermentum magna. Integer tincidunt ultricies neque, aliquet malesuada erat condimentum vel. Morbi fringilla vestibulum malesuada. Mauris vitae est risus, vitae mattis turpis. Duis neque mauris, tristique quis pretium quis, varius at odio. Proin sed viverra ligula. Donec fermentum tortor id sem adipiscing mollis.
+
+## Another Sub-Heading
+
+“Cloud” is a big buzz word today. **But in essence** it’s good old internet, including storage, *remote computing*, services, web, everything that’s not on your computer is in cloud.
+
+### 3rd Layer Heading
+
+Dictum ut enim. In eros lacus, iaculis ut dictum id, elementum quis metus. Vestibulum auctor purus vitae purus iaculis mollis. Quisque laoreet volutpat velit ut ultricies. Aenean non arcu sed lorem lacinia egestas. Duis arcu nibh, placerat a euismod in, ornare eu lectus. Morbi a fermentum magna. Integer tincidunt ultricies neque, aliquet malesuada erat condimentum vel. Morbi fringilla vestibulum malesuada.
+
+## Lists
+
+Nunc varius placerat leo eu euismod. Proin aliquet, neque sit amet interdum porta, diam ante placerat nisi, non egestas justo leo ut lacus. Proin nec fermentum turpis. Ut malesuada volutpat mi in condimentum. Integer vehicula sem at nulla blandit tincidunt. Suspendisse sit amet interdum est. Morbi sed magna dui. Morbi tristique, ante quis tempus varius, dolor ipsum gravida nisl, in condimentum dolor leo quis nulla.
+
+- Lorem ipsum dolor sit amet.
+- Nunc varius placerat leo eu euismod.
+- Mauris vitae leo in elit rhoncus tempor in quis justo.
+- Pellentesque at nulla eget nibh aliquam placerat quis non ligula.
+
+And numbered:
+
+1. Mauris vitae leo in elit rhoncus tempor in quis justo.
+2. Nunc varius placerat leo eu euismod.
+3. Lorem ipsum dolor sit amet.
+4. Pellentesque at nulla eget nibh aliquam placerat quis non ligula.
+
+
+Donec gravida egestas sem sed faucibus. Cras egestas metus ut quam rutrum sollicitudin. Nunc imperdiet ligula at leo rhoncus laoreet at sed sapien. Donec sapien diam, `inline code` suscipit et bibendum id, fermentum eget nunc. Quisque lobortis tortor ut magna eleifend auctor. Suspendisse suscipit leo at arcu consectetur imperdiet sed nec lorem. Pellentesque ultricies vestibulum nisi non venenatis.
+
+## Code Samples
+
+Dictum ut enim. In eros lacus, iaculis ut dictum id, elementum quis metus. Vestibulum auctor purus vitae purus iaculis mollis. Quisque laoreet volutpat velit ut ultricies. 
+
+	/* Hello World program */
+
+	#include<stdio.h>
+
+	main()
+	{
+	    printf("Hello World");
+	}
+
+Morbi a fermentum magna. Integer tincidunt ultricies neque, aliquet malesuada erat condimentum vel. Morbi fringilla vestibulum malesuada. Mauris vitae est risus.
+
+<div class="footnotes">
+	<ol>
+		<li id="fn:1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
+		<li>Sed do eiusmod tempor <a href="">incididunt</a> ut labore et dolore magna.</li>
+		<li>Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</li>
+	</ol>
+</div>

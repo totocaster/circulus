@@ -1,0 +1,5 @@
+section#archive, section#posts, body>header, body>footer {width:70%;}
+section#archive header {width:100%;}
+article img {margin:0px;width:100%;}
+article div.image-footnote {margin:0px;width:100%;text-align:center;}
+

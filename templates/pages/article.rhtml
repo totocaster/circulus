@@ -1,0 +1,12 @@
+<section id="posts">
+	<article>
+		<header>
+			<h1><%= title %></h1>
+			<!--div class="author">by Toto Tvalavadze</div-->
+			<div class="details">
+				<time><%= date %></time> &bull; <a href="<%= url %>">Permalink</a> &bull; <a href="javascript:void(0)" onclick="read_later('<%= url %>');">Read Later</a>
+			</div>
+		</header>
+		<%= body %>
+	</article>
+</section>

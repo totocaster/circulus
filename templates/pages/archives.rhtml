@@ -1,0 +1,28 @@
+<section id="archive">
+	<header>
+		<h1><%= @path.capitalize %></h1>
+	</header>
+	<section id="archive-listing">
+		<% 
+		
+		posts = {}
+		for entry in archives.sort{|a, other| other[:date] <=> a[:date]}
+			posts[Date.parse(entry.date).strftime("%B %Y")] = [] unless posts[Date.parse(entry.date).strftime("%B %Y")].kind_of?(Array)
+			posts[Date.parse(entry.date).strftime("%B %Y")] << entry
+		end	
+		%>
+		<% unless posts.empty? %>
+			<% posts.each do |key, value|  %>
+			<h2><%= key %></h2>
+			<ul>
+			  <% for entry in value %>
+			    <li><time><%= Date.parse(entry.date).day %></time><a href="<%= entry.path %>"><%= entry.title %></a></li>
+			  <% end %>
+			</ul>
+			<% end %>
+		<% else %>
+		<p>No articles</p>
+		<% end %>
+		
+	</section>
+</section>

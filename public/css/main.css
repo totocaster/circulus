@@ -1,0 +1,78 @@
+@import url(http://fonts.googleapis.com/css?family=Ruda:400,700,900);
+
+body {color:#222;font-family:Georgia,serif;text-rendering:optimizeLegibility;}
+a {color:#026F8C;text-decoration:underline;}
+
+section#posts, section#archive {width:720px;margin:0px auto 0px auto;}
+
+/*
+ * Header
+ */
+body>header {width:720px;margin:100px auto 50px auto;text-align:center;}
+section#archive header {width:720px;text-align:center;}
+body>header img {width:100px;height:100px;border-radius:100px;border:0px;}
+body>header div.menu {font-size:10pt;text-transform:uppercase;margin-top:30px;}
+
+/*
+ * Archive
+ */
+section#archive-listing h2 {margin-left:90px;margin-top:50px;font-family:"Ruda",sans-serif;font-weight:400;color:#999;font-size:12pt;}
+section#archive-listing ul {list-style:none;}
+section#archive-listing ul li time,section#archive-listing ul li p {display:inline;}
+section#archive-listing ul li time {width:40px;position:relative;float:left;padding-right:10px;text-align:right;}
+section#archive-listing ul li {margin-top:20px;}
+section#archive-listing ul li a {display:block;}
+
+/*  
+ * Article Styling 
+ */
+article p {-webkit-hyphens:auto;-moz-hyphens:auto;hyphens:auto;}
+article h1,h2,h3{font-family:'Ruda',sans-serif;font-weight:800;margin:30px 0px -10px 0px;}
+section#archive header h1 {font-size:24pt;font-family:'Ruda',sans-serif;font-weight:800;}
+article h1 {font-size:24pt;margin-top:20px;}
+article h1>a {font-weight:600;}
+article h1>span {color:#999;}
+article h2,h3 {font-weight:600;}
+article h2 {font-size:18pt;}
+article h3 {font-size:16pt;}
+
+article header {text-align:center;}
+article header div.details {font-size:12pt;margin-top:15px;}
+article header div.details time {color:#999;}
+article header div.author {font-size:12pt;color:#333;text-transform:uppercase;letter-spacing:0.5em;margin:12px 0px 0px 0px;}
+
+article p, article blockquote, article ul li, article ol li {font-size:14pt;line-height:24pt;margin:20px 0px 20px 0px;}
+article p.alert {padding:5px 10px;color:#FFF;background-color:#E83405;border-radius:5px;}
+article p.alert a {text-decoration:underline;color:#FFF;}
+article blockquote {margin:10px 0px 10px 20px;padding-left:20px;border-left:5px #DDD solid;color:#666;}
+article ul li, article ol li {margin:5px 0px 5px 0px;}
+article ul, article ol {padding-left:50px;}
+article code {background-color:#FBFBFB;color:#333;border-radius:4px;font-family:Menlo,Monaco,monospace;font-size:12pt;padding:4px;}
+article pre>code {overflow:auto;width:100%;display:block;padding:10px;}
+article sup {margin:0px;padding:0px;line-height:0px;} /* Fixes odd line height in paragraph lines with <sup> tags. */
+
+article img {width:960px;margin-left:-120px;border-radius:5px;}
+article img.nostyle {margin-left:0px;border-radius:0px;}
+article div.image-footnote {line-height:0pt;width:950px;margin-left:-115px;font-size:8pt;color:#999;text-align:right;font-family:"Lucida Grande","Verdana",Tahoma,sans-serif;}
+
+article div.footnotes {border-top: 1px dashed #CCC;}
+article div.footnotes ol li {line-height:16pt;font-size:11pt;color:#666;}
+
+/* Article selection styles */
+article ::selection {background:#FFFC7F;color:#333;}
+article ::-moz-selection {background:#FFFC7F;color:#333;}
+article ::-webkit-selection {background:#FFFC7F;color:#333;}
+
+
+
+/* 
+ * Footer 
+ */
+footer {width:720px;margin:100px auto 50px auto;font-size:10pt;text-align:center;}
+footer div.menu {text-transform:uppercase;margin:20px;}
+footer img {width:60px;height:60px;margin:50px 0px 30px 0px;border-radius:30px;border:0px;}
+footer h1 {font-size:16pt;font-family:'Ruda',sans-serif;font-weight:800;margin-bottom:0px;}
+footer p {margin:0px 0px 30px 0px;}
+footer div.sosume {color:#999;margin-top:40px;}
+footer div.sosume p {margin:10px}
+footer div.sosume a {color:#666;background-color:#EEE;padding:3px;text-decoration:none;border-radius:3px;}

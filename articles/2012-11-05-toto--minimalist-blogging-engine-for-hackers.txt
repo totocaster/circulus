@@ -1,0 +1,67 @@
+title: "Toto — Minimalist Blogging Engine for Hackers"
+
+Yes, it's called Toto, and I have nothing to do with it. Toto is written by [Alexis Sellier](http://cloudhead.io) and it's contributors on [GitHub](http://cloudhead.io/toto). I discovered it by a chance when I was looking at Octopress^[1](#fn:1). First of all I loved it because of name, obviously; but more importantly it was what I was looking for: minimalist blogging engine with nothing extra. In fact I liked it so much, I dropped idea of writing my own and concentrated on design and template.
+
+Toto is static, thus stores all you posts in plain text files. It  doesn’t run on a database. Markdown is choice of text-processing and that's a plus for me because I never write posts in WYSIWYG editor in a browser. [iA Writer](http://www.iawriter.com) is my choice of text editing, which also supports markdown.
+
+Engine itself is accompanied with default template called [dorothy](http://github.com/cloudhead/dorothy) which is a great foundation for your design^[2](#fn:1). Toto was made with [Heroku](http://heroku.com) in mind, and because of it you get Git publishing and versioning for free. In a sentence—toto is ultimate minimalist hacker's blogging engine. Deploying a blog is a matter of typing few Git commands. 
+
+Toto is very easy to learn, code for the whole engine is in one `toto.rb` file if you peek into gem. Default theme is also matter of one evening to modify for your needs if you have your own HTML already done.  
+
+And it's called Toto!
+
+## Creating Blog and Installation
+
+If you are familiar with Ruby gems and Heroku, is as easy as typing few lines in terminal.
+
+First of all you'll need toto itself, just get the gem:
+
+	$ gem install toto
+
+Then you'll need a blog instance, which also servers as a theme and configuration. 
+
+	$ git clone git://github.com/cloudhead/dorothy.git myblog
+
+Toto templates are actually a [rack apps](http://rack.github.com) so you can fire them up locally by simply calling `rackup`.
+
+## Creating Posts
+
+Posts, in any blog, are just documents. So toto stores those text files in `posts` folder of your template. There is only one simple rule to follow while making your post, filename has to match following pattern:
+
+	YYYY-MM-DD-your-post-title.txt
+
+So basically if you want post to be published on November 5th, 2012 titled "Hello world", that would look like this:
+
+	2012-10-05-hello-world.txt
+
+In file itself you simply write any HTML/Markdown you want with prefixed metadata in YAML format (just do not forget to leave blank line after). Meta can be title, date or anything you wish. For example:
+
+	title: Hello World
+	author: Arthor Blogman Jr.
+	date: 2012/10/05
+
+	Dorothy lived in the midst of the great Kansas prairies, with Uncle Henry, _who was a farmer_, and Aunt Em, who was the farmer's wife.   
+
+There is even a rake task for new post which does sample post for you:
+
+	$ rake new
+
+## Deployment
+
+As I mentioned toto templates are basically a rack apps, hence they have rackup file. You can deploy toto blog on anything running rack compatible server. But where Toto shines is Heroku. You simple create a Heroku app and just push toto to it.
+
+	$ heroku create myblog
+	$ git push heroku master
+
+Job done, now you can view your little blog published into huge oceans of the internet.
+
+	$ heroku open
+
+
+
+<div class="footnotes">
+  <ol>
+    <li id="fn:1"><a href="http://octopress.org">Octopress</a> for Jekyll is also brilliant, but that was overkill for my needs.</li>
+    <li id="fn:2">Its a great minimalist theme by itself too.</li>
+  </ol>
+</div>
