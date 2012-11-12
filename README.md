@@ -31,7 +31,7 @@ Licence and Contribution
 ------------------------
 
 You are free to use this theme for personal or commercial use, just
-leave the attribution to GitHub repo in the bottom of the template.^4^
+leave the attribution to GitHub repo in the bottom of the template.
 If you want to get rid of it please contact me.
 
 You are also free to fork repo and make any changes, ones that I’ll like
