@@ -6,7 +6,7 @@
 				<a href="/about">Permalink</a> &bull; <a href="javascript:void(0)" onclick="read_later('http://your -url.com/about');">Read Later</a>
 			</div>
 		</header>
-		<p>Circulus is a template for ver good, minimal, yet beautifully designed static blog engine &mdash; <a href="http://cloudhead.io/toto">toto</a>. I created this template for my personal blog, but then decided to open-source it as-well.</p>
+		<p>Circulus is a template for ver good, minimal, yet beautifully designed static blog engine &mdash; <a href="http://cloudhead.io/toto">toto</a>. I created this template for my <a href="http://totocaster.com">personal blog</a>, but then decided to open-source it as-well. mainly because I like it, and secondly because there are not much toto templates at this moment.</p>
 		<h2>Features</h2>
 		<ul>
 			<li>Minimalist and readable design.</li>
@@ -21,12 +21,27 @@
 			<li>Integrated Read Late (via Instapaper).</li>
 			<li>Clean and organised Archives page.</li>
 			<li>HTML based navigation, no generators.</li>
+			<li>Automatic circle images on header and footer.</li>
 		</ul>
 		<h2>Automatic Image Footnoting</h2>
 		<p>Circulus has a very simple but handy feature when rendering images. If you provide alternative text to image-link markdown in you post like this: <code>![Text Here](http://link-to.your/image.png)</code>, Circulus will print-out that alternative text as a footnote for image automatically, so you keep your markdown free of html.</p>
+		<h2>Fonts</h2>
+		<p>Circulus fonts are different of ones used on my blog. Reason for that is TypeKit, it does require a account to render fonts on specific domains. I wanted Circulus to work out of the box, but maintain readability and typography goodness, thus I replaced fonts with freely available ones from your system, and from Google Web-fonts archive.</p>
+		<p>You are free to change those fonts on your personal blog.</p>
+		<h2>Installation and Toto Versions</h2>
+		<p>Original toto gem doesn't support Ruby 1.9 very well, so I modified <code>Gemfile</code> a bit to make it work well. If you have truncated RSS feed then you are running old version of toto, check it with latest on on <a href="http://github.com/cloudhead/toto">GitHub</a>.</p>
+		<p>If you want to be clean with your code just replace <code>gem 'toto'</code> with <code>gem "toto", :git => 'git://github.com/cloudhead/toto.git'</code> in your <code>Gemfile</code>. By default it's already done for you.</p>
+		<h2>Configuration</h2>
+		<p>Circulus supports all the default configurations that toto has, you can override defaults in <code>config.ru</code> rack file.</p>
+		<h2>Heroku</h2>
+		<p>Template is prepared to be published on Heroku, so only thing you have to do is run following lines in terminal:</p>
+		<pre><code>$ heroku create myblog
+$ git push heroku master
+$ heroku open</code></pre>
+		<p>Done, enjoy your blog.</p>
 		<h2>Licence and Contribution</h2>
 		<p>You are free to use this theme for personal or commercial use, just leave the attribution to GitHub repo in the bottom of the template.<sup>4</sup> If you want to get rid of it please contact me.</p>
-		<p>You are also free to fork repo and make any changes, ones that I'll like will be pushed to my branches too. Thanks for the interest.</p>
+		<p>You are also free to fork Circulus and make any changes, ones that I like will be pushed to my main branch too. Thanks for the interest.</p>
 		<p>Happy blogging!</p>
 		
 		<div class="footnotes">
