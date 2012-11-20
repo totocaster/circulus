@@ -58,6 +58,13 @@ article div.image-footnote {line-height:0pt;width:950px;margin-left:-115px;font-
 article div.footnotes {border-top: 1px dashed #CCC;}
 article div.footnotes ol li {line-height:16pt;font-size:11pt;color:#666;}
 
+/* Arcicle Tables */
+article table {width:100%;margin:auto auto;border:1px solid #CCC;border-collapse:collapse;}
+article table thead {border-bottom:2px solid #CCC;text-align:left;}
+article table thead tr th {padding:8px;} 
+article table tr {height:26px;}
+article table td {padding:8px;border:1px solid #CCC;} 
+
 /* Article selection styles */
 article ::selection {background:#FFFC7F;color:#333;}
 article ::-moz-selection {background:#FFFC7F;color:#333;}
